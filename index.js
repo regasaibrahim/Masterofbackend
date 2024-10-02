@@ -72,7 +72,7 @@ app.get('/create-table', (req, res) => {
 app.post('/Regasa', (req, res) => {
   const { name, email, deparment, year } = req.body;
 
-  if (!name || !email || !department || !year) {
+  if (!name || !email || !deparment || !year) {
     return res.status(400).send('Name, email, deparment, and year are required');
   }
 
