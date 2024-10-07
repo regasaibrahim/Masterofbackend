@@ -77,7 +77,7 @@ app.post('/Regasa', (req, res) => {
   }
 
   const insertUserQuery = 'INSERT INTO users (name, email) VALUES (?, ?)';
-  const insertStudentQuery = 'INSERT INTO student (department, year) VALUES (?, ?)';
+  const insertStudentQuery = 'INSERT INTO student (deparment, year) VALUES (?, ?)';
 
   // Insert into users table
   connection.query(insertUserQuery, [name, email], (err, userResults) => {
